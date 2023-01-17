@@ -4,6 +4,8 @@
 
 - [Introducción a las Bases de Datos Relacionales](#introducción-a-las-bases-de-datos-relacionales)
 - [Qué son entidades y atributos](#qué-son-entidades-y-atributos)
+- [Entidades de Platzi Blog](#entidades-de-platzi-blog)
+
 
 ## Introducción a las Bases de Datos Relacionales
 
@@ -51,6 +53,33 @@ Existen varios tipos de notaciones para los modelos entidad relacionamiento. *Ch
 
 <p align="center"><img width=60% src="./Pictures/Chen.webp"></p>
 
+## Entidades de Platzi Blog
 
+En este caso se hará una base de datos, el cual consiste en un manejador de Blogspot
 
+* Primer paso: Identificar las entidades.
+* Segundo paso: Pensar en los atributos.
 
+<h3>Diagrama ER: PlatziBlog</h3>
+
+* Post
+    * Título
+    * Fecha de publicación 
+    * Contenido
+    * Estatus
+    * Etiquetas (multivaluado)
+    * Id Post
+* Usuarios
+    * Login
+    * Password
+    * Nickname
+    * Email
+    * IdUsuario
+* Comentarios
+    * Contenido
+    * Fecha de publicación
+    * IdComentario
+    * IdUsuario(clave foránea)
+* Categorías
+    * Nombre de Categoría
+    * idCategoría
