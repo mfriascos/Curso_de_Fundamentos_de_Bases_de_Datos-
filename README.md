@@ -5,7 +5,8 @@
 - [Introducción a las Bases de Datos Relacionales](#introducción-a-las-bases-de-datos-relacionales)
 - [Qué son entidades y atributos](#qué-son-entidades-y-atributos)
 - [Entidades de Platzi Blog](#entidades-de-platzi-blog)
-
+- [Relaciones](#relaciones)
+- [Múltiples Muchos](#múltiples-muchos)
 
 ## Introducción a las Bases de Datos Relacionales
 
@@ -83,3 +84,23 @@ En este caso se hará una base de datos, el cual consiste en un manejador de Blo
 * Categorías
     * Nombre de Categoría
     * idCategoría
+
+## Relaciones
+
+Las **Relaciones** nos permiten ligar o unir nuestras diferentes entidades y se representan con rombos. Por convención se definen a través de verbos. 
+
+Las relaciones tienen una propiedad llamada **cardinalidad** y tiene que ver con números. Cuántos de un lado pertenecen a cuántos del otro lado: 
+
+* Cardinalidad: 1 a 1: Persona _ tiene _ datos-contacto, para obtener la cardinalidad se extraen los números mayores de los dos lados. 
+* Cardinalidad: 0 a 1: Paciente _ tiene _ hab-hospital, la habitación de hospital puede estar vacía. 
+* Cardinalidad: 1 a N: Persona _ tiene _ automovil. Una persona puede tener muchos automóviles, pero, un automovil por cuestión de documentos, sólo puede tener un dueño.
+* Cardinalidad: 0 a N
+
+<p align="center"><img width=50% src="./Pictures/Cardinalidad.png"></p>
+
+## Múltiples Muchos
+
+<h3>Cardinalidad Muchos a Muchos</h3>
+
+Alumno _ Pertenece _ Clase
+
