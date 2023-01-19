@@ -104,3 +104,6 @@ Las relaciones tienen una propiedad llamada **cardinalidad** y tiene que ver con
 
 Alumno _ Pertenece _ Clase
 
+## Diagrama ER
+
+Un diagrama es como un mapa y nos yuda a entender cuáles son las entidades con las que vamos a trabajar, cuáes son sus relaciones y qué papel van a jugar en las aplicaciones de la base de datos. 
