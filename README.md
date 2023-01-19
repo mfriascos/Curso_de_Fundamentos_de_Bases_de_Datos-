@@ -107,3 +107,7 @@ Alumno _ Pertenece _ Clase
 ## Diagrama ER
 
 Un diagrama es como un mapa y nos yuda a entender cuáles son las entidades con las que vamos a trabajar, cuáes son sus relaciones y qué papel van a jugar en las aplicaciones de la base de datos. 
+
+[Ejemplo de Diagramas ER Platzi Blogspot](/Diagrams/Diagrama_ER.drawio)
+
+[Ejemplo de Diagramas ER Banda/Género](/Diagrams/DER_Example.drawio)
