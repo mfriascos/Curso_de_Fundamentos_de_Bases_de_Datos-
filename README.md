@@ -7,6 +7,10 @@
 - [Entidades de Platzi Blog](#entidades-de-platzi-blog)
 - [Relaciones](#relaciones)
 - [Múltiples Muchos](#múltiples-muchos)
+- [Diagrama ER](#diagrama-er)
+- [Diagrama físico: Tipos de Datos y Constrains](#diagrama-físico-tipos-de-datos-y-constrains)
+- [Diagrama físico: Normalización](#diagrama-físico-normalización)
+
 
 ## Introducción a las Bases de Datos Relacionales
 
@@ -111,3 +115,35 @@ Un diagrama es como un mapa y nos yuda a entender cuáles son las entidades con 
 [Ejemplo de Diagramas ER Platzi Blogspot](/Diagrams/Diagrama_ER.drawio)
 
 [Ejemplo de Diagramas ER Banda/Género](/Diagrams/DER_Example.drawio)
+
+## Diagrama físico: Tipos de Datos y Constrains
+
+Para llevar a la práctica un diagrama debemos ir más allá  y darle detalle con parámetros como: 
+
+<h3>Tipos de Dato</h3>
+
+* **Texto**: CHAR(n), VARCHAR(n), TEXT.
+* **Números**: INTEGER, BIGINT SMALLINT, DECIMAL(n,s), NUMERIC(n,s)
+* **Fecha/hora**: DATE, TIME, DATETIME, TIMESTAP
+* **Lógicos**: BOOLEAN
+
+<h3>Constraints(Restricciones)</h3>
+
+* **NOT NULL**: Se asegura que la columna no tenga valores nulos 
+* **UNIQUE**: Se asegura que cada valor en la columna no se repita 
+* **PRIMARY KEY**: Es una combinación de NOT NULL y UNIQUE 
+* **FOREIGN KEY**: Identifica de manera única una tupla en otra tabla 
+* **CHECK**: Se asegura que el valor en la columna cumpla una condición dad
+* **DEFAULT**: Coloca un valor por defecto cuando no hay un valor especificado. 
+* **INDEX**: Se crea por columna para permitir búsquedas más rápidas. 
+
+## Diagrama Físico: Normalización
+
+La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. Esto obedece a las 12 reglas de **codd** y nos permiten separar componentes en la base de datos: 
+
+* **Primera forma normal (1FN)**: Atributos atómicos(Sin campos repetidos)
+* **Segunda forma normal (2FN)**: Cumple 1FN y cada campo de la tabla debe depender de una clave única 
+* **Tercera forma normal (3FN)**: Cumple 1FN y 2FN y los campos que No son clave, No deben tener dependencias
+* **Cuarta forma normal (4FN)**: Cumple 1FN, 2FN, 3FN y los campos ultivaluados se identifican por una clave única
+
+
