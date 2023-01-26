@@ -12,6 +12,7 @@
 - [Diagrama físico: Normalización](#diagrama-físico-normalización)
 - [Formas Normales en Bases de Datos Relacionales](#formas-normales-en-bases-de-datos-relacionales)
 - [Instalación Local de un RDBMS (Windows)](#instalación-local-de-un-rdbms-windows)
+- [Qué es RDB y RDBMS?](#qué-es-rdb-y-rdbms)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -238,3 +239,19 @@ Hay dos maneras de acceder a manejadores de bases de datos:
 En este curso usaremos **MySQL** porque tiene un impacto histórico siendo muy utilizado y además es software libre y gratuito. La versión 5.6.43 es compatible con la mayoría de aplicaciones y frameworks.
 
 * Root es el usuario principal que tendrá todos los permisos y por lo tanto en ambientes de producción **hay que tener mucho cuidado** al configurarlo.
+
+## Qué es RDB y RDBMS? 
+
+**RBD (Relational Database)**
+
+**RDBMS (Relational DataBase Management System) Sistema Manejador de Bases de Datos Relacionales**
+
+La  diferencia entre ambos es que as BBDD son un conjunto de datos pertenecientes (o al menos en teoría)  a un mismo tipo de contexto, que guarda los datos de forma persistente para un posterior uso, y el Sistema de gestión de BBDD o sistema manejador, es el que nos permite acceder a ella, es un software, herramienta que sirve de conexión entre las BBDD y el usuario (nos presenta una interfaz para poder gestionarla, manejarla).
+
+RDBMS:
+
+* MySQL
+* PostgreSQL
+* Etc
+
+Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características. 
