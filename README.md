@@ -11,7 +11,7 @@
 - [Diagrama físico: Tipos de Datos y Constrains](#diagrama-físico-tipos-de-datos-y-constrains)
 - [Diagrama físico: Normalización](#diagrama-físico-normalización)
 - [Formas Normales en Bases de Datos Relacionales](#formas-normales-en-bases-de-datos-relacionales)
-
+- [Instalación Local de un RDBMS (Windows)](#instalación-local-de-un-rdbms-windows)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -227,3 +227,14 @@ Algunos autores precisan una 5FN que hace referencia a que después de realizar 
 ## Diagrama Físico: Normalizando Platziblog
 
 El [Diagrama Físico](./Diagrams/DiagramaFisico.drawio) de Platziblog
+
+## Instalación Local de un RDBMS (Windows)
+
+Hay dos maneras de acceder a manejadores de bases de datos:
+
+* Instalar en máquina local un administrador de bases relacional.
+* Tener ambientes de desarrollo especiales o servicios cloud.
+
+En este curso usaremos **MySQL** porque tiene un impacto histórico siendo muy utilizado y además es software libre y gratuito. La versión 5.6.43 es compatible con la mayoría de aplicaciones y frameworks.
+
+* Root es el usuario principal que tendrá todos los permisos y por lo tanto en ambientes de producción **hay que tener mucho cuidado** al configurarlo.
