@@ -255,3 +255,6 @@ RDBMS:
 * Etc
 
 Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características. 
+
+## Clientes Gráficos
+
