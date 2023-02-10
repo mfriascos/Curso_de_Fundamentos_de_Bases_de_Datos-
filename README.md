@@ -14,6 +14,8 @@
 - [Instalación Local de un RDBMS (Windows)](#instalación-local-de-un-rdbms-windows)
 - [Qué es RDB y RDBMS?](#qué-es-rdb-y-rdbms)
 - [Clientes Gráficos](#clientes-gráficos)
+- [Servicios Administrados](#servicios-administrados)
+
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -291,4 +293,7 @@ Y para finalemente instalar Workbench
 
 Se [descarga](https://dev.mysql.com/downloads/workbench/) el archivo y se procede a su instalación con el comando ```$ sudo dpkg -i deb...```
 
+## Servicios Administrados 
+
+Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS sino que los contratan a otras personas. Estos servicios administrados cloud te permiten concentrarte en la base de datos y no en su administración y actualización.
 
