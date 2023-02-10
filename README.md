@@ -15,7 +15,7 @@
 - [Qué es RDB y RDBMS?](#qué-es-rdb-y-rdbms)
 - [Clientes Gráficos](#clientes-gráficos)
 - [Servicios Administrados](#servicios-administrados)
-
+- [Historia de SQL](#historia-de-sql)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -296,4 +296,11 @@ Se [descarga](https://dev.mysql.com/downloads/workbench/) el archivo y se proced
 ## Servicios Administrados 
 
 Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS sino que los contratan a otras personas. Estos servicios administrados cloud te permiten concentrarte en la base de datos y no en su administración y actualización.
+
+## Historia de SQL 
+
+**SQL** significa Structured Query Language y tiene una estructura clara y fija. Su objetivo es hacer un solo lenguaje para consultar cualquier manejador de bases de datos volviéndose un gran estándar.
+
+Ahora existe el **NOSQL** o **Not Only Structured Query Language** que significa que no sólo se utiliza SQLen las bases de datos no relacionales.
+
 
