@@ -13,6 +13,7 @@
 - [Formas Normales en Bases de Datos Relacionales](#formas-normales-en-bases-de-datos-relacionales)
 - [Instalación Local de un RDBMS (Windows)](#instalación-local-de-un-rdbms-windows)
 - [Qué es RDB y RDBMS?](#qué-es-rdb-y-rdbms)
+- [Clientes Gráficos](#clientes-gráficos)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -257,4 +258,37 @@ RDBMS:
 Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características. 
 
 ## Clientes Gráficos
+
+Se instala mysql server y mysql Workbench como cliente gráfico, para instalarlo en ubuntu es necesario seguir el siguiente tutorial: 
+
+* [Instalación mysql Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+
+Adicional si se presenta errores al conectar el workbrench a mysql
+
+```bash
+sudo apt update
+sudo apt install mysql-workbench
+
+sudo mysql -u root -p
+```
+```sql
+mysql> use mysql
+mysql> SELECTUser, Host, pluginFROM mysql.user;
+```
+
+Se debe cambiar el plugin de auth_socket a mysql_native_password.
+```sql
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+```
+
+Comprobamos:
+```sql
+mysql> SELECT User, Host, plugin FROM mysql.user;
+```
+
+Y para finalemente instalar Workbench 
+
+Se [descarga](https://dev.mysql.com/downloads/workbench/) el archivo y se procede a su instalación con el comando ```$ sudo dpkg -i deb...```
+
 
