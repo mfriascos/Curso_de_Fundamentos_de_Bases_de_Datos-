@@ -16,6 +16,7 @@
 - [Clientes Gráficos](#clientes-gráficos)
 - [Servicios Administrados](#servicios-administrados)
 - [Historia de SQL](#historia-de-sql)
+- [DDL create](#ddl-create)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -303,4 +304,42 @@ Hoy en día muchas empresas ya no tienen instalados en sus servidores los RDBMS 
 
 Ahora existe el **NOSQL** o **Not Only Structured Query Language** que significa que no sólo se utiliza SQLen las bases de datos no relacionales.
 
+## DDL CREATE 
+
+**SQL** tiene dos grandes sublenguajes:
+**DDL** o Data Definition Language que nos ayuda a crear la estructura de una base de datos. Existen 3 grandes comandos:
+
+* Create: Nos ayuda a crear bases de datos, tablas, vistas, índices, etc.
+* Alter: Ayuda a alterar o modificar entidades.
+* Drop: Nos ayuda a borrar. Hay que tener cuidado al utilizarlo.
+
+**3 objetos que manipularemos con el lenguaje DDL:**
+
+* Database o bases de datos
+* Table o tablas. Son la traducción a SQL de las entidades
+* View o vistas: Se ofrece la proyección de los datos de la base de datos de forma entendible.
+
+<h3>Crear Base de Datos</h3>
+
+```sql
+CREATE DATABASE test_db; --test_db es el nombre generico de la BBDD
+
+USE DATABASE test_db;
+```
+
+<h3>Crear Tabla</h3>
+
+```sql
+CREATE TABLE people(
+    person_id int,
+    last_name varchar(255),
+    first_name varchar(255),
+    address_house varchar(255),
+    city varchar(255)
+);
+```
+
+En el cliente gráfico al agregar person_id se marca automáticamente PK (Primary Key) y NN (Not Null) que indica que el campo no debe quedar vacío y si queremos que la base de datos incremente el idde 1 en 1 de cada elemento marcamos AI (Auto increment)
+
+## CREATE VIEW y DDL ALTER
 
