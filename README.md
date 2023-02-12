@@ -343,3 +343,28 @@ En el cliente gráfico al agregar person_id se marca automáticamente PK (Primar
 
 ## CREATE VIEW y DDL ALTER
 
+Las views o vistas tienen que ver con los **SELECTS** o proyecciones.
+Lo que hacen las vistas es tomar datos de las BBDD, ponerlas en una forma presentable y convertirlas en algo que podamos presentar de maner recurrente. 
+
+```sql 
+CREATE VIEW v_brasil_customers AS SELECT customer_name, contact_name
+FROM customers
+WHERE country = 'Brasil';
+```
+
+El comando ```VIEW``` nos indica que vamos a seleccionar únicamente los clientes que están en Brasil.
+
+<h3>Alter Table</h3> 
+
+El comando Alter permite modificar 
+
+```sql 
+ALTER TABLE people
+ADD date_of_birth date;
+
+ALTER TABLE people
+ALTER COLUMN date_of_birth year;
+
+ALTER TABLE people 
+DROP COLUMN date_of_birth;
+```
