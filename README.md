@@ -17,6 +17,8 @@
 - [Servicios Administrados](#servicios-administrados)
 - [Historia de SQL](#historia-de-sql)
 - [DDL create](#ddl-create)
+- [CREATE VIEW y DDL ALTER](#create-view-y-ddl-alter)
+- [DDL drop](#ddl-drop)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -368,3 +370,15 @@ ALTER COLUMN date_of_birth year;
 ALTER TABLE people 
 DROP COLUMN date_of_birth;
 ```
+
+## DDL drop 
+
+Esta sentencia puede ser la más ***PELIGROSA***, básicamente borra o desaparece de nuestra base de datos algún elemento. 
+
+```sql
+DROP TABLE people;
+
+DROP DATABSE test_db;
+```
+
+<p align="center"><img width=90% src="./Pictures/SQLCommands.webp"></p>
