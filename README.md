@@ -19,6 +19,7 @@
 - [DDL create](#ddl-create)
 - [CREATE VIEW y DDL ALTER](#create-view-y-ddl-alter)
 - [DDL drop](#ddl-drop)
+- [DML](#dml)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -382,3 +383,50 @@ DROP DATABSE test_db;
 ```
 
 <p align="center"><img width=90% src="./Pictures/SQLCommands.webp"></p>
+
+## DML 
+
+**DML** trata del contenido de la base de datos. Son las siglas de **D**ata **M**anipulation **L**anguage y sus comandos son: 
+
+* **Insert:** Inserta o agrega nuevos registros a la tabla
+* **Update:** Actualiza o modifica los datos que ya existen
+* **Delete:** Esta sentencia es riesgosa porque puede borrar el contenido de una tabla. 
+* **Select:** Trae información de la base de datos. 
+
+**INSERT**
+
+```SQL
+INSERT INTO people (last_name, first_name, address, city)
+VALUES ('Hernandez','Laura','Calle 21','Monterrey');
+```
+**UPDATE**
+
+```SQL
+UPDATE people
+SET last_name = 'Chavez', city = 'Mérida'
+WHERE person_id = 1;
+
+UPDATE people
+SET first_name = 'Juan'
+WHERE city = 'Mérida'    
+
+UPDATE people
+SET first_name = 'Juan';
+```
+En esta sentencia hay que tener en cuenta que no se puede actualizar masivamente una gran cantidad de datos, porque la información puede verse implicada.
+
+**DELETE**
+
+```SQL
+DELETE FROM people
+WHERE person_id = 1;
+
+DELETE FROM people;     --Borra toda la información, es mejor no utilizarlo
+```
+
+**SELECT**
+
+```SQL
+SELECT first_name, last_name
+FROM people;
+```
