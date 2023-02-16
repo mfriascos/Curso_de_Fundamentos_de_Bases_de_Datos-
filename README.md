@@ -20,6 +20,7 @@
 - [CREATE VIEW y DDL ALTER](#create-view-y-ddl-alter)
 - [DDL drop](#ddl-drop)
 - [DML](#dml)
+- [Qué tan Standard es SQL](#qué-tan-standard-es-sql)
 
 
 ## Introducción a las Bases de Datos Relacionales
@@ -430,3 +431,28 @@ DELETE FROM people;     --Borra toda la información, es mejor no utilizarlo
 SELECT first_name, last_name
 FROM people;
 ```
+
+## Qué tan Standard es SQL ? 
+
+La utilidad más grande de SQL fue unificar la forma en la que pensamos y hacemos preguntas a un repositorio de datos. Ahora que nacen nuevas bases de datos igualmente siguen tomando elementos de SQL 
+
+Las siguientes son sentencias para el manejo de una base de datos en MySql 
+
+```sql
+CREATE TABLE people (
+person_id int,
+last_name varchar(255),
+first_name varchar(255),
+address varchar(255),
+city varchar(255)
+);
+
+INSERT INTO people (last_name, first_name, address, city)
+VALUES ('Hernández','Laura','Calle 21','Monterrey');
+
+SELECT first_name, last_name
+FROM people;
+
+DROP TABLE people;
+```
+
